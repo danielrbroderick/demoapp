@@ -1,0 +1,36 @@
+
+
+
+Create New Ad View 
+<% form_for(@ad, :url=>{:action=>'create'}) do |f| %>
+<p>
+	<b>Name: <%= f.text_field :name %></b>
+</p>
+
+<p>
+	<b>Description: <%= f.text_area :description %></b>
+</p>
+
+<p>
+	<b>Price:<%= f.text_field :price %></b>
+</p>
+
+<p>
+	<b>Seller ID: <%= f.text_field :seller_id %></b>
+</p>
+
+<p>
+	<b>Email:<%= f.text_field :email %></b>
+</p>
+<p>
+	<b>Img URL:<%= f.text_field :img_url %></b>
+</p>
+
+<p>
+<%= f.submit "Create" %>
+</p>
+<% end %>
+
+Outside end brackets
+
+

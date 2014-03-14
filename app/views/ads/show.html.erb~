@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+<title></title>
+
+<body>
+
+<p>
+	<b>Name: <%= @ad.name %></b>
+</p>
+
+<p>
+	<b>Description:<%= @ad.description %></b>
+</p>
+
+<p>
+	<b>Price:<%= @ad.price %></b>
+</p>
+
+<p>
+	<b>Seller ID:<%= @ad.seller_id %></b>
+</p>
+
+<p>
+	<b>Email:</b>
+</p>
+
+</body>
+</html>

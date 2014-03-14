@@ -1,0 +1,2 @@
+class DanielsController < ApplicationController
+end

@@ -1,0 +1,31 @@
+class AdsController < ApplicationController
+  def index
+
+  end
+
+  def show
+	@ad = Ad.find(params[:id])
+
+  end
+
+  def test
+
+  end
+
+  def new
+	@ad = Ad.new
+  end
+
+  def create
+	#@ad = Ad.new(params[:ad])
+	@ad = Ad.new(user_params)
+	@ad.save       
+	redirect_to "/ads/#{@ad.id}"
+  end
+
+ def user_params
+	# Description - params.require(object).permit(fields)
+      params.require(:ad).permit( :name, :description, :price, :seller_id, :email ,:img_url)
+    end
+
+end
